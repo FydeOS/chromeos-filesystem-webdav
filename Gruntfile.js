@@ -97,7 +97,8 @@ module.exports = function (grunt) {
         jshint: {
             options: {
                 jshintrc: '.jshintrc',
-                reporter: require('jshint-stylish')
+                reporter: require('jshint-stylish'),
+                reporterOutput: ""
             },
             all: [
                 'Gruntfile.js',
@@ -125,7 +126,13 @@ module.exports = function (grunt) {
                         '*.{ico,png,txt}',
                         'icons/{,*/}*.png',
                         'styles/{,*/}*.*',
-                        '_locales/{,*/}*.json'
+                        '_locales/{,*/}*.json',
+                        'scripts/{,*/}*.js',
+                        'assets/{,*/}*.*',
+                        'bower_components/jquery/dist/{,*/}/*.js',
+                        'bower_components/jquery-toast-plugin/dist/{,*/}/*.*',
+                        'window.html',
+                        'manifest.json'
                     ]
                 }]
             }
@@ -134,6 +141,7 @@ module.exports = function (grunt) {
             dist: {
                 src: [
                     '<%= config.app %>/bower_components/jquery/dist/jquery.min.js',
+                    '<%= config.app %>/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js',
                     '<%= config.app %>/scripts/metadata_cache.js',
                     '<%= config.app %>/scripts/webdav_client.js',
                     '<%= config.app %>/scripts/webdav_fs.js',
@@ -218,7 +226,7 @@ module.exports = function (grunt) {
         'concat',
         'chromeManifest:dist',
         'copy',
-        'vulcanize',
+        // 'vulcanize',
         'compress'
     ]);
 

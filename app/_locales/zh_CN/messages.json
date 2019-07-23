@@ -1,38 +1,38 @@
 {
   "appName": {
-    "message": "Nutstore Drive",
+    "message": "坚果云盘",
     "description": "The name of the application"
   },
   "shortName": {
-    "message": "Nutstore Drive",
+    "message": "坚果云盘",
     "description": "The short name of the application"
   },
   "appDescription": {
-    "message": "Use your Nutstore Drive on FydeOS.",
+    "message": "在 FydeOS 上使用您的坚果云盘。",
     "description": "The description of the application"
   },
   "alertMessage": {
-    "message": "Attention! For your data security, please go to your Nutstore - Settings - Security, and click \"Add Application\" button at the bottom to generate a dedicated application password. Fill that password below instead of your Nutstore account password.",
+    "message": "为了您的数据安全，请前往您的坚果云 - 账户信息 - 安全选项，点击最下方的「添加应用」按钮创建一个专用应用密码。请在下方填入该密码，而不是您的坚果云账户密码。",
     "description": "Warning to display before using this extension."
   },
   "mountHeader": {
-    "message": "Nutstore Drive",
+    "message": "坚果云盘",
     "description": "Header describing the server mount form."
   },
   "mount": {
-    "message": "Mount",
+    "message": "启用",
     "description": "Label for a button that triggers the mount action."
   },
   "mountAttempt": {
-    "message": "Mounting...",
+    "message": "启用中…",
     "description": "Popup notifcation that informs the user that the system is attempting to mount a new instance with the credentials they provided."
   },
   "mountSuccess": {
-    "message": "Mounted successfully",
+    "message": "启用成功",
     "description": "Popup notifcation that informs the user that the system successfully mounted a new instance with the credentials they provided."
   },
   "mountFail": {
-    "message": "Failed to mount",
+    "message": "启用失败",
     "description": "Popup notifcation that informs the user that the system failed to mount a new instance with the credentials they provided."
   },
   "url": {
@@ -40,11 +40,11 @@
     "description": "The server's URL"
   },
   "username": {
-    "message": "Username",
+    "message": "账户",
     "description": "The user name"
   },
   "password": {
-    "message": "Password",
+    "message": "密码",
     "description": "The user password"
   }
 }
